@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Dative">
+
+	<link rel="shortcut icon" href="assets/bower_components/bootstrap/assets/ico/favicon.png">
+
+	<title>LoveYogaFest</title>
+
+	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+
+	<link rel='stylesheet' href='assets/bower_components/bootstrap/dist/css/bootstrap.min.css'>
+<link rel='stylesheet' href='assets/css/style.css'>
+
+	<!--[if lt IE 9]>
+		<script src='assets/bower_components/bootstrap/assets/js/html5shiv.js'></script>
+<script src='assets/bower_components/bootstrap/assets/js/respond.min.js'></script>
+    <![endif]-->
+
+</head>
+<body>
+
+
+
+	<script src='assets/bower_components/jquery/jquery.min.js'></script>
+<script src='assets/bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+<script src='assets/js/app.js'></script>
+
+</body>
+</html>
