@@ -1,0 +1,50 @@
+header {
+	margin: 0 auto;
+	text-align: center;
+	background: url('assets/img/bg-image.png') top center no-repeat;
+	background-attachment: fixed;
+	border-bottom: 4px solid $brown;
+
+	img {
+		height: 150px;
+		margin: 5rem;
+		@include animation(bounce 5s linear infinite);		
+	}
+	
+}
+
+@include keyframes(bounce) {
+			0% {
+				@include transform(translateY(0px));
+			}
+
+			25% {
+				@include transform(translateY(-6px));
+			}
+
+			50% {
+				@include transform(translateY(0px));
+			}
+
+			75% {
+				@include transform(translateY(6px));
+			}			
+
+			100% {
+				@include transform(translateY(0px));
+			}
+
+	}
+
+.content {
+	background: #FBF8F6;
+	height: 1000px;
+	padding: 3rem 0;
+
+	h1 {
+		@include oldenberg;
+		text-align: center;
+		font-weight: 700;
+		margin: 0;
+	}
+}
