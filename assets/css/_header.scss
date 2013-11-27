@@ -3,7 +3,6 @@ header {
 	text-align: center;
 	background: url('assets/img/bg-image.png') top center no-repeat;
 	background-attachment: fixed;
-	border-bottom: 4px solid $brown;
 
 	img {
 		height: 150px;
@@ -35,16 +34,3 @@ header {
 			}
 
 	}
-
-.content {
-	background: #FBF8F6;
-	height: 1000px;
-	padding: 3rem 0;
-
-	h1 {
-		@include oldenberg;
-		text-align: center;
-		font-weight: 700;
-		margin: 0;
-	}
-}

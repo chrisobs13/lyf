@@ -1,3 +1,79 @@
 @import "variables";
 @import "mixins";
+@import "global";
+@import "typography";
 @import "header";
+
+.content {
+		background: #FBF8F6;
+		border-top: 2px solid $green-dk;
+		border-bottom: 2px solid $green-dk;
+}
+
+h2 {
+	margin: 6rem 0;
+}
+
+
+form {
+	padding: 0 2rem;
+	margin-bottom: 6rem;
+
+	input,button {
+		padding: 1rem;
+		font-size: 16px;
+		box-shadow: 0;
+		border: 1px solid darken(#FBF8F6,12%);
+	}
+
+	input {
+		border-radius: 5px 0 0 5px;
+		border-right: 0;
+	}
+
+	button {
+		background: $brown;
+		color: #fff;
+		@include oldenberg;
+		border-radius: 0 5px 5px 0;
+		border-left: 0;		
+	}
+}
+
+
+
+
+#faq {
+	h5 {
+		border-bottom: 1px solid lighten($brown, 40%);
+		padding-bottom: 1rem;
+		@include asap;
+		font-weight: 700;
+	}
+
+	p {
+		color: $green-lt;
+	}
+
+	section {
+		margin-bottom: 3rem;
+	}
+}
+
+footer {
+	text-align: center;
+	padding: 2rem 0 6rem;
+	@include asap;
+
+	a {
+		color: $green-dk;
+		font-weight: 700;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+			color: $green-dk;
+		}
+	}
+}
+
