@@ -42,7 +42,7 @@ form {
 		border-right: 0;
 	}
 
-	button {
+	input[type=submit] {
 		background: $brown;
 		color: #fff;
 		@include oldenberg;

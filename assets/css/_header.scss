@@ -1,12 +1,18 @@
 header {
 	margin: 0 auto;
+	padding: 6rem 0;
 	text-align: center;
-	background: url('assets/img/bg-image.png') top center no-repeat;
+	background: url('assets/img/bg-image.jpg') top center no-repeat;
 	background-attachment: fixed;
+	background-size: 100% auto;
+
+	@media only screen and (max-width: 600px) {
+		background-size: cover;
+		background-attachment: scroll;
+}
 
 	img {
 		height: 150px;
-		margin: 5rem;
 		@include animation(bounce 5s linear infinite);		
 	}
 	

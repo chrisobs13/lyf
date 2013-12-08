@@ -11,11 +11,35 @@
 	<title>LoveYogaFest | Cape Cod Yoga Festival 2014</title>
 
 	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
 
-	<link rel='stylesheet' href='6d6a82e6508019a98b89a2075f94f61e.css'>
+	<link rel='stylesheet' href='assets/bower_components/bootstrap/dist/css/bootstrap.min.css'>
+<link rel='stylesheet' href='assets/css/style.css'>
 
 	<!--[if lt IE 9]>
-		<script src='7b6153affff3b4433c39b13ea8576fa1.js'></script>
+		<script src='assets/bower_components/bootstrap/assets/js/html5shiv.js'></script>
+<script src='assets/bower_components/bootstrap/assets/js/respond.min.js'></script>
     <![endif]-->
 	<link href='http://fonts.googleapis.com/css?family=Oldenburg|Asap:400,700,400italic' rel='stylesheet' type='text/css'>
 </head>
@@ -38,10 +62,19 @@
 				<p class="text-center">
 					<b>Share your email</b> and be the first to know about our fabulous teachers, exciting schedule, ticket packages and very special guests! 
 				</p>
-				<form role="form">
+				<form role="form" action="http://loveyogafest.us3.list-manage.com/subscribe/post?u=b22ea293dcd8c5d66ad2bc8fd&amp;id=8153a38bbc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 					<div class="row">
-					<input class="col-xs-9" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-					<button class="col-xs-3" type="submit" class="btn btn-default">Join us!</button>	
+					<input class="col-xs-8 col-sm-9" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter email">
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none">
+						</div>
+						<div class="response" id="mce-success-response" style="display:none">
+						</div>
+					</div>
+    				<div style="position: absolute; left: -5000px;">
+    					<input type="text" name="b_b22ea293dcd8c5d66ad2bc8fd_8153a38bbc" value="">
+    				</div>
+					<input class="col-xs-4 col-sm-3" type="submit" value="Join Us!" name="subscribe" id="mc-embedded-subscribe" class="button">	
 					</div>		
 				</form>
 			</div>
@@ -72,7 +105,9 @@
 	&copy; 2013 LoveYogaFest &middot; <a href="#">Contact Us</a>
 </footer>
 
-	<script src='bb904f47b943d5dcc73e6283a8a1229b.js'></script>
+	<script src='assets/bower_components/jquery/jquery.min.js'></script>
+<script src='assets/bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+<script src='assets/js/app.js'></script>
 
 </body>
 </html>
