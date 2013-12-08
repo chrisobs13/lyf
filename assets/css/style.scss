@@ -11,7 +11,18 @@
 }
 
 h2 {
-	margin: 6rem 0;
+	margin: 3rem 0;
+}
+
+h3 {
+	margin: 0 auto 4rem auto;
+	text-align: center;
+	color: $brown;
+	background: lighten($action,40%);
+	display: inline-block;
+	text-shadow: 0 1px 1px #fff;
+	padding: .5rem;
+	border-radius: 4px;
 }
 
 
