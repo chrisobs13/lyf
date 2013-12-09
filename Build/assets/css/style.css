@@ -11,13 +11,13 @@ body {
   background: #009b7d; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'birminghamregular'; }
+  font-family: 'Asap'; }
 
 header {
   margin: 0 auto;
   padding: 6rem 0;
   text-align: center;
-  background: url(../img/bg-image.jpg) top center no-repeat;
+  background: url(../img/bg-image-2.jpg) top center no-repeat;
   background-attachment: fixed;
   background-size: 100% auto; }
   @media only screen and (max-width: 600px) {
@@ -79,7 +79,7 @@ header {
     transform: translateY(0px); } }
 
 .content {
-  background: #FBF8F6;
+  background: #ecddd2;
   border-top: 2px solid #005957;
   border-bottom: 2px solid #005957; }
 
@@ -125,13 +125,15 @@ form {
   margin-bottom: 3rem; }
 
 footer {
+  background: #005957;
   text-align: center;
   padding: 2rem 0 6rem;
-  font-family: 'Asap'; }
+  font-family: 'Asap';
+  color: #ecddd2; }
   footer a {
-    color: #005957;
+    color: #ecddd2;
     font-weight: 700;
     text-decoration: none; }
     footer a:hover {
       text-decoration: none;
-      color: #005957; }
+      color: #ecddd2; }

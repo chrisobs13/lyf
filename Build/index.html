@@ -11,41 +11,17 @@
 	<title>LoveYogaFest | Cape Cod Yoga Festival 2014</title>
 
 	
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link'); 
-                    for (var i = 0; i < links.length;i++) { 
-                    var link = links[i]; 
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
 
-	<link rel='stylesheet' href='assets/bower_components/bootstrap/dist/css/bootstrap.min.css'>
-<link rel='stylesheet' href='assets/css/style.css'>
+	<link rel='stylesheet' href='8fc8cb16dd34d49033b4aedfba318db5.css'>
 
 	<!--[if lt IE 9]>
-		<script src='assets/bower_components/bootstrap/assets/js/html5shiv.js'></script>
-<script src='assets/bower_components/bootstrap/assets/js/respond.min.js'></script>
+		<script src='7b6153affff3b4433c39b13ea8576fa1.js'></script>
     <![endif]-->
 	<link href='http://fonts.googleapis.com/css?family=Oldenburg|Asap:400,700,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <header>
-	<img src="assets/img/lyf-logo.png"/>
+	<img src="assets/img/lyf-logo-white.png"/>
 </header>
 <div class="content">
 	<div class="container">
@@ -105,9 +81,7 @@
 	&copy; 2013 LoveYogaFest &middot; <a href="#">Contact Us</a>
 </footer>
 
-	<script src='assets/bower_components/jquery/jquery.min.js'></script>
-<script src='assets/bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
-<script src='assets/js/app.js'></script>
+	<script src='bb904f47b943d5dcc73e6283a8a1229b.js'></script>
 
 </body>
 </html>

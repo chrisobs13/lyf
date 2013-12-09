@@ -6,7 +6,7 @@
 @import "header";
 
 .content {
-		background: #FBF8F6;
+		background: #ecddd2;
 		border-top: 2px solid $green-dk;
 		border-bottom: 2px solid $green-dk;
 }
@@ -73,18 +73,20 @@ form {
 }
 
 footer {
+	background: $green-dk;
 	text-align: center;
 	padding: 2rem 0 6rem;
 	@include asap;
+	color: #ecddd2;
 
 	a {
-		color: $green-dk;
+		color: #ecddd2;
 		font-weight: 700;
 		text-decoration: none;
 
 		&:hover {
 			text-decoration: none;
-			color: $green-dk;
+			color: #ecddd2;
 		}
 	}
 }
