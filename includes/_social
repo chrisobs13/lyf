@@ -1,0 +1,9 @@
+<div class="social row">
+	<section class="col-xs-12 col-sm-10 col-sm-push-1 text-center">
+		<h1>Connect with Love Yoga Fest</h1>
+		<a target="_blank" class="track-facebook" href="https://www.facebook.com/LoveYogaFest"><img class="social-icon" src="assets/img/icon-facebook.png" alt="Love Yoga Fest of Cape Cod on Facebook"/></a>
+		<a target="_blank" class="track-twitter" href="https://twitter.com/loveyogafest"><img class="social-icon" src="assets/img/icon-twitter.png" alt="Love Yoga Fest of Cape Cod on Twitter"/></a>
+		<a target="_blank" class="track-pinterest" href="http://www.pinterest.com/loveyogafest/"><img class="social-icon" src="assets/img/icon-pinterest.png" alt="Love Yoga Fest of Cape Cod on Pinterest"/></a>
+		<a target="_blank" class="track-instagram" href="http://instagram.com/loveyogafest/"><img class="social-icon" src="assets/img/icon-instagram.png" alt="Love Yoga Fest of Cape Cod on Instagram"/></a>						 
+	</section>
+</div>

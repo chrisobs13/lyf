@@ -1,6 +1,5 @@
 @import "variables";
 @import "mixins";
-@import "font-face";
 @import "global";
 @import "typography";
 @import "header";
@@ -13,6 +12,12 @@
 
 h2 {
 	margin: 3rem 0;
+
+	span {
+		font-weight: 700;
+		display: block;
+		margin-bottom: 1rem;
+	}
 }
 
 h3 {
@@ -29,7 +34,6 @@ h3 {
 
 form {
 	padding: 0 2rem;
-	margin-bottom: 6rem;
 
 	input,button {
 		padding: 1rem;
@@ -46,12 +50,36 @@ form {
 	input[type=submit] {
 		background: $brown;
 		color: #fff;
-		@include oldenberg;
+		@include asap;
 		border-radius: 0 5px 5px 0;
 		border-left: 0;		
 	}
 }
 
+.social {
+
+	margin: 4rem auto;
+
+	h1 {
+		font-size:2rem;
+		margin: 0 auto;
+		font-weight: 800;
+	}
+	.social-icon {
+		height: 35px;
+		margin: 1rem;
+		margin-top: 2rem;
+		@include transition(all .12s ease-in);
+
+		@media only screen and (min-width: 400px) {
+		height: 60px;
+		}
+		
+		&:hover {
+			margin-top:1.2rem;
+		}
+	}
+}
 
 
 
